@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Assignment6</string>
+    <string name="categoryitempicture">categoryitempicture</string>
+    <string name="categorytitle">CategoryTitle</string>
+    <string name="personlogo">personlogo</string>
+    <string name="searchlogo">searchlogo</string>
+    <string name="search_for_apps_and_games">Search for apps and games</string>
+    <string name="miclogo">miclogo</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroudplaystoremainactivity"
+    tools:context=".activity.PlayStoreMainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvHolder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/rvHomeScreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ImageView
+        android:layout_width="@dimen/personicon_width"
+        android:layout_height="@dimen/personicon_height"
+        android:contentDescription="@string/personlogo"
+        android:src="@drawable/personicon"
+        app:layout_constraintBottom_toTopOf="@+id/rvHomeScreen"
+        app:layout_constraintEnd_toEndOf="@+id/cvHolder"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/ivMiclogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <ImageView
+        android:layout_width="@dimen/searchlogo_width"
+        android:layout_height="@dimen/searchlogo_height"
+        android:contentDescription="@string/searchlogo"
+        android:src="@drawable/search"
+        app:layout_constraintBottom_toTopOf="@+id/rvHomeScreen"
+        app:layout_constraintEnd_toStartOf="@+id/tvSearchBar"
+        app:layout_constraintHorizontal_bias="0.722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789" />
+
+    <TextView
+        android:id="@+id/tvSearchBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_for_apps_and_games"
+        app:layout_constraintBottom_toTopOf="@+id/rvHomeScreen"
+        app:layout_constraintEnd_toStartOf="@+id/ivMiclogo"
+        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.681" />
+
+    <ImageView
+        android:id="@+id/ivMiclogo"
+        android:layout_width="@dimen/miclogo_width"
+        android:layout_height="@dimen/miclogo_height"
+        android:contentDescription="@string/miclogo"
+        android:src="@drawable/mic"
+        app:layout_constraintBottom_toTopOf="@+id/rvHomeScreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.777" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHomeScreen"
+        android:layout_width="@dimen/rvhomescreen_width"
+        android:layout_height="@dimen/rvhomescreen_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
